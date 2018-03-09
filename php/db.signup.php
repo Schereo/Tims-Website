@@ -24,9 +24,10 @@ if(isset($_POST['submit'])) {
 
     // verify reCAPTCHA
     $secretkey = '6LdnTUkUAAAAAD2Er7-PJNHQlc59nFO33mn6skp_';
-    $response = $_POST['g-recaptcha-response'];
+    $response = $_POST['captcha'];
     $url = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretkey.'&response='.$response);
     $recaptchaResponse = json_decode($url, TRUE);
+
 
     //Error handlers
 
@@ -36,10 +37,13 @@ if(isset($_POST['submit'])) {
         echo "<span class='form-error'>Es konnte keine Verbindung zur Datenbank aufgebaut werden!</span>";
     }
 
+
     //reCAPTCHA unsuccessful
     elseif(!$recaptchaResponse['success'] == 1){
         $errorRecaptcha = true;
         echo "<span class='form-error'>Der reCAPTCHA ist ungültig!</span>";
+        print_r($recaptchaResponse);
+        print_r($response);
     }
 
     //Check for empty fields
@@ -115,20 +119,43 @@ if(isset($_POST['submit'])) {
     var errorRecaptcha = '<?php echo $errorRecaptcha; ?>';
     var errorFirst = '<?php echo $errorFirst; ?>';
     var errorLast = '<?php echo $errorLast; ?>';
-    //var errorEmail = '<?php //echo $errorEmail; ?>//';
-    //var errorPwd = '<?php //echo $errorPwd; ?>//';
-    //var errorPwdwd = '<?php //echo $errorPwdwd; ?>//';
-    //var errorInCharFirst = '<?php //echo $errorInCharFirst; ?>//';
-    //var errorInCharLast = '<?php //echo $errorInCharLast; ?>//';
-    //var errorPwdMatch = '<?php //echo $errorPwdMatch; ?>//';
-    //var errorInEmail = '<?php //echo $errorInEmail; ?>//';
-    //var errorEmailTaken= '<?php //echo $errorEmailTaken; ?>//';
+    var errorEmail = '<?php //echo $errorEmail; ?>//';
+    var errorPwd = '<?php //echo $errorPwd; ?>//';
+    var errorPwdwd = '<?php //echo $errorPwdwd; ?>//';
+    var errorInCharFirst = '<?php //echo $errorInCharFirst; ?>//';
+    var errorInCharLast = '<?php //echo $errorInCharLast; ?>//';
+    var errorPwdMatch = '<?php //echo $errorPwdMatch; ?>//';
+    var errorInEmail = '<?php //echo $errorInEmail; ?>//';
+    var errorEmailTaken= '<?php //echo $errorEmailTaken; ?>//';
 
     if(errorFirst){
-        $("#signup-first").addClass);
+        $("#signup-first").addClass('input-error');
+    }
+    if(errorLast){
+        $("#signup-last").addClass('input-error');
+    }
+    if(errorEmail){
+        $("#signup-email").addClass('input-error');
+    }
+    if(errorPwd){
+        $("#signup-pwd").addClass('input-error');
+    }
+    if(errorPwdwd){
+        $("#signup-pwdwd").addClass('input-error');
+    }
+    if(errorInCharFirst){
+        $("#signup-first").addClass('input-error');
+    }
+    if(errorInCharLast){
+        $("#signup-last").addClass('input-error');
+    }
+    if(errorPwdMatch){
+        $("#signup-pwd, #signup-pwdwd").addClass('input-error');
+    }
+    if (errorInEmail || errorEmailTaken) {
+        $("#signup-email").addClass('input-error');
     }
 
 
-    }
 
 </script>

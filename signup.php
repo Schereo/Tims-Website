@@ -27,13 +27,12 @@ include_once "header.php"; ?>
                 email: email,
                 pwd: pwd,
                 pwdwd: pwdwd,
-                submit: submit
-
+                submit: submit,
+                captcha: grecaptcha.getResponse()
             });
-
         });
-
-    });</script>
+    });
+  </script>
 <div class="container-fluid banner-maincontent" role="main">
     <div class="container container-margin">
         <div class="row">

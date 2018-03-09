@@ -66,7 +66,7 @@
                         <input  type="text" name="email" placeholder="Benutzername/E-Mail">
                         <input type="password" name="pwd" placeholder="Passwort">
                         <button class="login-button" type="submit" name="submit">Login</button>
-                        <a href="http://timsigl.de/php/signup.html.php"><button class="login-button" type="button">Neu Anmelden</button></a>
+                        <a href="http://timsigl.de/php/signup.php"><button class="login-button" type="button">Neu Anmelden</button></a>
                     </form>
                 </li>
             </ul>
