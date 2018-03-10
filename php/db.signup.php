@@ -119,14 +119,14 @@ if(isset($_POST['submit'])) {
     var errorRecaptcha = '<?php echo $errorRecaptcha; ?>';
     var errorFirst = '<?php echo $errorFirst; ?>';
     var errorLast = '<?php echo $errorLast; ?>';
-    var errorEmail = '<?php //echo $errorEmail; ?>//';
-    var errorPwd = '<?php //echo $errorPwd; ?>//';
-    var errorPwdwd = '<?php //echo $errorPwdwd; ?>//';
-    var errorInCharFirst = '<?php //echo $errorInCharFirst; ?>//';
-    var errorInCharLast = '<?php //echo $errorInCharLast; ?>//';
-    var errorPwdMatch = '<?php //echo $errorPwdMatch; ?>//';
-    var errorInEmail = '<?php //echo $errorInEmail; ?>//';
-    var errorEmailTaken= '<?php //echo $errorEmailTaken; ?>//';
+    var errorEmail = '<?php echo $errorEmail; ?>//';
+    var errorPwd = '<?php echo $errorPwd; ?>//';
+    var errorPwdwd = '<?php echo $errorPwdwd; ?>//';
+    var errorInCharFirst = '<?php echo $errorInCharFirst; ?>//';
+    var errorInCharLast = '<?php echo $errorInCharLast; ?>//';
+    var errorPwdMatch = '<?php echo $errorPwdMatch; ?>//';
+    var errorInEmail = '<?php echo $errorInEmail; ?>//';
+    var errorEmailTaken= '<?php echo $errorEmailTaken; ?>//';
 
     if(errorFirst){
         $("#signup-first").addClass('input-error');
