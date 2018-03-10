@@ -56,7 +56,7 @@ Ich lebe bereites 20 Jahre hier in Oldenburg(bin logischerweise hier geboren) un
             </div>
             <div class="row">
                 <div class="col-lg-push-2 col-lg-9 text-center">
-                    <div class="inf-bar" >04.03.18 - Tim Sigl - <i>#Info, #PHP, #Taschenrechner</i></div>
+                    <div class="article-inf-bar" >04.03.18 - Tim Sigl - <i>#Info, #PHP, #Taschenrechner</i></div>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@ Ich lebe bereites 20 Jahre hier in Oldenburg(bin logischerweise hier geboren) un
          </div>
            <div class="row">
                <div class="col-lg-push-2 col-lg-9 text-center">
-                   <div class="inf-bar" >27.02.18 - Tim Sigl - <i>#Xiaomi, #Liquidmetal, #Wärmeleitpaste</i></div>
+                   <div class="article-inf-bar" >27.02.18 - Tim Sigl - <i>#Xiaomi, #Liquidmetal, #Wärmeleitpaste</i></div>
                </div>
            </div>
        </div>
@@ -100,7 +100,7 @@ Ich lebe bereites 20 Jahre hier in Oldenburg(bin logischerweise hier geboren) un
             </div>
             <div class="row">
                 <div class="col-lg-push-2 col-lg-9 text-center">
-                    <div class="inf-bar" >16.01.18 - Tim Sigl - <i>#Info, #Aktuelles, #Ananas</i></div>
+                    <div class="article-inf-bar" >16.01.18 - Tim Sigl - <i>#Info, #Aktuelles, #Ananas</i></div>
                 </div>
             </div>
         </div>

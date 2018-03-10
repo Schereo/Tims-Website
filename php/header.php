@@ -11,7 +11,7 @@
     <meta name="description" content="Mein persönlicher Blog - Mein Leben, dies das und jenes">
     <!-- Bootstrap -->
     <link href="https://timsigl.de/css/bootstrap.css" rel="stylesheet">
-    <link href="https://timsigl.de/css/main.css.php" rel="stylesheet">
+    <link href="https://timsigl.de/css/main.css" rel="stylesheet">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102517358-2"></script>
     <script>
@@ -43,7 +43,6 @@
 
     <!-- Google reCAPTCHA -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <![endif]-->
 </head>
 <body>
 <!-- Navigation-->
@@ -54,7 +53,7 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1"
                     aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
                 <span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="https://timsigl.de/index.php"><img src="https://timsigl.de/bilder/Logo.svg" width="50" alt="Tim's Homepage Logo"/></a>
+            <a class="navbar-brand" href="https://timsigl.de/index.php"><img src="https://timsigl.de/bilder/Logo.svg" class="img-responsive" width="50" alt="Tim's Homepage Logo"/></a>
         </div>
         <div class="collapse navbar-collapse" id="topFixedNavbar1">
             <ul class="nav navbar-nav navbar-left">

@@ -1,0 +1,153 @@
+:root {
+	/*Main colors variables*/
+	--primary: #35B7C7;
+	--secondary: #514f4f;
+	--secondarylight: #6A6A6A;
+	--secondarydark: #404040;
+	--accent: #F8BB62;
+}
+
+/*General styling */
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	padding-top: 60px;
+	background-color: var(--primary);
+}
+p {
+	line-height: 1.4em;
+}
+h1 {
+	font-family: 'Roboto Slab';
+	color: var(--accent);
+	font-size: 7em;
+	margin-top: 50px;
+	text-align: center;
+}
+
+/*Bootstrap selectors*/
+.banner-maincontent  {
+	background-color: var(--secondary);
+	min-height: 200px;
+}
+.banner-secondarycontent {
+	background-color: var(--primary);
+	min-height: 200px;
+}
+.banner-footer {
+	background-color: var(--secondary);
+	min-height: 50px;
+	padding-top: 15px;
+}
+.navbar  {
+	height: 60px;
+	border: 0;
+}
+.nav li a:link  {
+	color: #fff;
+	padding-top: 20px;
+}
+.nav li a:visited  {
+    color: #fff;
+    padding-top: 20px;
+}
+.btn-default {
+	color: var(--primary);
+	background-color: var(--secondarylight);
+	border-width: 0;
+	padding: 0px 8px;
+}
+.navbar-default, .grey_background {
+  background-color: rgba(95,95,95,0.60);
+}
+
+/* For links in articles */
+div a, p a {
+	text-decoration: none;
+	color: #fff;
+}
+div a:visited, p a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+div a:hover, p a:hover {
+    color: var(--secondarylight);
+    text-decoration: none;
+}
+
+/*Custom selectors*/
+.picture-margin {
+    margin-top: 20px;
+}
+.container-margin {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.no-indent {
+	padding-left: 0;
+}
+.strech {
+	padding: 0px;
+}
+
+/*Login & Signup selectors*/
+.login-form{
+	margin-top: 15px;
+	margin-right: 10px;
+}
+.login-form input{
+    color: #000;
+    background-color: #fff;
+}
+.signup-form input{
+	 color: #000;
+	 background-color: #fff;
+	 width: 30%;
+	 padding: 12px 20px;
+	 box-sizing: border-box;
+	 border-radius: 4px;
+ }
+input:focus {
+	border: 2px solid var(--primary);
+}
+.login-button{
+    color: var(--secondarydark);
+    background-color: var(--primary);
+    border-width: 0;
+}
+.signup-button{
+	color: var(--secondarydark);
+	background-color: var(--primary);
+	border-width: 0;
+    width: 30%;
+    height: 50px;
+}
+.signup-button:hover, .calc-button:hover, form select:hover, .login-button:hover{
+    background-color: var(--accent);
+}
+.article-inf-bar {
+    padding: 5px auto;
+    margin-top: 10px;
+    background-color: var(--secondary);
+}
+
+/*Calculator selectors*/
+.taschenrechner input{
+    color: #000;
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100%;
+}
+.calc-button, form select {
+    color: var(--secondarydark);
+    background-color: #35B7C7;
+    border-width: 0;
+    height: 50px;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
