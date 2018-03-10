@@ -12,7 +12,8 @@ include_once "header.php"; ?>
     </div>
 </div>
 <!-- Hauptarkikel -->
-<script>$(document).ready(function () {
+<script>
+$(document).ready(function () {
         $("form").submit(function (event) {
             event.preventDefault();
             var first = $("#signup-first").val();
@@ -21,17 +22,30 @@ include_once "header.php"; ?>
             var pwd = $("#signup-pwd").val();
             var pwdwd = $("#signup-pwdwd").val();
             var submit = $("#signup-submit").val();
-            $(".form-message").load("db.signup.php", {
-                first: first,
-                last: last,
-                email: email,
-                pwd: pwd,
-                pwdwd: pwdwd,
-                submit: submit,
+            $.ajax({
+              url: "php/db.signup.php",
+              type: "POST",
+              data: {
+                first: "first",
+                last: "last",
+                email: "email",
+                pwd: "pwd",
+                pwdwd: "pwdwd",
+                submit: "submit",
                 captcha: grecaptcha.getResponse()
+              },
+            })
+            .done(function() {
+              console.log("success");
+            })
+            .fail(function() {
+              console.log("error");
+            })
+            .always(function() {
+              console.log("complete");
+            })
             });
         });
-    });
   </script>
 <div class="container-fluid banner-maincontent" role="main">
     <div class="container container-margin">
