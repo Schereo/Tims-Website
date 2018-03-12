@@ -1,7 +1,7 @@
 <?php
 include_once "php/header.php"; ?>
 <!-- Überschrift -->
-<div class="container-fluid banner-heading strech" role="banner">
+<div class="container-fluid banner-heading strech-banner" role="banner">
     <img class="img-responsive hidden visible-lg container-margin"  src="bilder/xiaomi_liquid_background.jpg" alt="Thumbnail Platine">
 </div>
 <!-- Hauptarkikel -->

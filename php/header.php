@@ -10,8 +10,8 @@
     <title>Tims Homepage</title>
     <meta name="description" content="Mein persönlicher Blog - Mein Leben, dies das und jenes">
     <!-- Bootstrap -->
-    <link href="https://timsigl.de/css/bootstrap.css" rel="stylesheet">
-    <link href="https://timsigl.de/css/main.css" rel="stylesheet">
+    <!--<link href="https://timsigl.de/css/bootstrap.css" rel="stylesheet">-->
+    <link href="css/main.css" rel="stylesheet">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102517358-2"></script>
     <script>
@@ -46,29 +46,23 @@
 </head>
 <body>
 <!-- Navigation-->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1"
-                    aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
-                <span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="https://timsigl.de/index.php"><img src="https://timsigl.de/bilder/Logo.svg" class="img-responsive" width="50" alt="Tim's Homepage Logo"/></a>
-        </div>
-        <div class="collapse navbar-collapse" id="topFixedNavbar1">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="https://timsigl.de/index.php">HOME</a></li>
-                <li><a href="https://timsigl.de/kontakt.php">KONTAKT</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><form class="login-form" action="http://timsigl.de/php/login.php" method="post">
-                        <input  type="text" name="email" placeholder="Benutzername/E-Mail">
-                        <input type="password" name="pwd" placeholder="Passwort">
-                        <button class="login-button" type="submit" name="submit">Login</button>
-                        <a href="http://timsigl.de/php/signup.php"><button class="login-button" type="button">Neu Anmelden</button></a>
-                    </form>
-                </li>
-            </ul>
-        </div>
+<nav class="wrapper no-gap" style="justify-content: end;" role="navigation">
+    <div class="align-center">
+      <a href="https://timsigl.de/index.php"><img src="https://timsigl.de/bilder/Logo.svg" alt="Tim's Homepage Logo"/></a>
     </div>
+    <div class="justify-left">
+      <a href="index.php">HOME</a>
+    </div>
+    <div class="justify-left">
+      <a href="kontakt.php">KONTAKT</a>
+    </div>
+    <div class="col-8 justify-right">
+      <form class="login-form" action="http://timsigl.de/php/login.php" method="post">
+        <input  type="text" name="email" placeholder="Benutzername/E-Mail">
+        <input type="password" name="pwd" placeholder="Passwort">
+        <button class="login-button" type="submit" name="submit">Login</button>
+        <a href="http://timsigl.de/php/signup.php"><button class="login-button" type="button">Neu Anmelden</button></a>
+      </form>
+    </div>
+  </div>
 </nav>

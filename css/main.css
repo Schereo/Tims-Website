@@ -11,11 +11,10 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
-	padding-top: 60px;
 	background-color: var(--primary);
 }
-p {
-	line-height: 1.4em;
+p, div p{
+	line-height: 2em;
 }
 h1 {
 	font-family: 'Roboto Slab';
@@ -23,6 +22,9 @@ h1 {
 	font-size: 7em;
 	margin-top: 50px;
 	text-align: center;
+}
+nav{
+  background-color: rgba(95,95,95,0.60);
 }
 
 /*Bootstrap selectors*/
@@ -39,10 +41,6 @@ h1 {
 	min-height: 50px;
 	padding-top: 15px;
 }
-.navbar  {
-	height: 60px;
-	border: 0;
-}
 .nav li a:link  {
 	color: #fff;
 	padding-top: 20px;
@@ -57,10 +55,6 @@ h1 {
 	border-width: 0;
 	padding: 0px 8px;
 }
-.navbar-default, .grey_background {
-  background-color: rgba(95,95,95,0.60);
-}
-
 /* For links in articles */
 div a, p a {
 	text-decoration: none;
@@ -86,7 +80,7 @@ div a:hover, p a:hover {
 .no-indent {
 	padding-left: 0;
 }
-.strech {
+.strech-banner {
 	padding: 0px;
 }
 
@@ -150,4 +144,42 @@ input:focus {
     width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+/*CSS Grid*/
+.container {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+}
+.wrapper {
+	grid-column: 2 / 3;
+	display: grid;
+	grid-gap: 4em;
+	grid-template-columns: repeat(12, 1fr);
+}
+.col-1 {
+	grid-column: auto / span 1;
+}
+.col-2 {
+	grid-column: auto / span 2;
+}
+.col-4 {
+	grid-column: auto / span 4;
+}
+.col-6 {
+	grid-column: auto / span 6;
+}
+.col-8 {
+	grid-column: auto / span 8;
+}
+.no-gap {
+	grid-gap: 0;
+}
+.justify-right {
+	justify-self: end;
+}
+.justify-left {
+	justify-self: start;
+}
+.align-center{
+	align-self: center;
 }
